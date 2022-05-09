@@ -6,6 +6,8 @@ import { MDBContainer } from "mdb-react-ui-kit";
 //app styles
 import "./App.css";
 import AddNewGig from "./pages/AddNewGig";
+import UpdateGig from "./pages/UpdateGig";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
       {/* app container */}
       <MDBContainer>
         {/* <Login /> */}
-        <AddNewGig/>
+        {/* <AddNewGig/> */}
+        {/* <UpdateGig/> */}
+        <Home/>
       </MDBContainer>
     </div>
   );

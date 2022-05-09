@@ -16,7 +16,8 @@ const AddNewGig = () => {
           <h5 className="mb-0">Create a new gig</h5>
           <small className="fw-bold">Post a gig to find developer</small>
         </div>
-        <div className="my-3">
+        {/* add new gig form */}
+        <div className="add-new-gig-form my-3">
           {/* company name */}
           <MDBInput
             type="text"
@@ -60,7 +61,12 @@ const AddNewGig = () => {
             <MDBInput type="file" size="sm" />
           </div>
           {/* job desc */}
-          <MDBTextArea label="Job Description" rows={4} className="mb-4"  size="sm"/>
+          <MDBTextArea
+            label="Job Description"
+            rows={4}
+            className="mb-4"
+            size="sm"
+          />
           {/* file upload progress */}
           <MDBProgress>
             <MDBProgressBar width={75} valuemin={0} valuemax={100} />
