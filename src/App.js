@@ -8,6 +8,7 @@ import "./App.css";
 import AddNewGig from "./pages/AddNewGig";
 import UpdateGig from "./pages/UpdateGig";
 import Home from "./pages/Home";
+import GigDetails from "./pages/GigDetails";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         {/* <Login /> */}
         {/* <AddNewGig/> */}
         {/* <UpdateGig/> */}
-        <Home/>
+        {/* <Home/> */}
+        <GigDetails/>
       </MDBContainer>
     </div>
   );
