@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+//App alert provider
+import { AppAlertProvider } from "./contexts/alertContext";
 //styles
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "./index.css";
@@ -8,6 +10,8 @@ import "./index.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <AppAlertProvider>
+      <App />
+    </AppAlertProvider>
   </React.StrictMode>
 );

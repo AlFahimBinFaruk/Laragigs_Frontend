@@ -10,7 +10,7 @@ import {
 } from "mdb-react-ui-kit";
 
 //SingleGigCard component
-const SingleGigCard = () => {
+const SingleGigCard = ({ managegigs = false }) => {
   return (
     <MDBCard className="h-100 rounded-0 shadow">
       <MDBRow className="g-0">
@@ -43,6 +43,15 @@ const SingleGigCard = () => {
               <MDBIcon fas icon="map-marker-alt" />
               <small className="text-muted ms-2">Wonka road,Germany</small>
             </p>
+            {/* manage btns */}
+            {managegigs && (
+              <div className="manage-btn d-flex justify-content-between align-items-center">
+                {/* edit btn */}
+                <MDBIcon far icon="edit" role="button" />
+                {/* delete btn */}
+                <MDBIcon fas icon="trash" role="button" />
+              </div>
+            )}
           </MDBCardBody>
         </MDBCol>
       </MDBRow>

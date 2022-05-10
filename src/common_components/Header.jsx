@@ -12,6 +12,7 @@ import {
   MDBIcon,
   MDBNavbarNav,
 } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [showNavNoToggler, setShowNavNoToggler] = useState(false);
 
@@ -30,15 +31,21 @@ const Header = () => {
             <MDBIcon icon="bars" fas />
           </MDBNavbarToggler>
           <MDBCollapse navbar show={showNavNoToggler} className="my-5">
-            <MDBNavbarBrand href="#" className="me-auto">
-              <h4>Laragigs</h4>
-            </MDBNavbarBrand>
+            <Link to="/" className="me-auto">
+              <MDBNavbarBrand>
+                <h4>Laragigs</h4>
+              </MDBNavbarBrand>
+            </Link>
             <MDBNavbarNav className="mb-2 mb-lg-0 w-auto">
               <MDBNavbarItem>
-                <MDBNavbarLink>Manage Your Gigs</MDBNavbarLink>
+                <Link to="/manage-gigs">
+                  <MDBNavbarLink>Manage Your Gigs</MDBNavbarLink>
+                </Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Account Settings</MDBNavbarLink>
+                <Link to="/account-settings">
+                  <MDBNavbarLink href="#">Account Settings</MDBNavbarLink>
+                </Link>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
